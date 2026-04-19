@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: Nunito , sans-serif;
+    color: black;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 5px; */
+    padding: 7px 45px;
+    background-color: white;
+    box-shadow: 0px  0 15px 2px rgba(0, 0, 0, 0.3);
+}
+.title{
+font-size: 18px;
+}
+
+p{
+      display: flex;
+    align-items: center;
+    gap: 3px;
+    /* justify-content: space-between; */
+}
+p svg{
+    width: 15px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+      padding: 7px 5px;
+      margin: 45px 0;
+      background-color: white;
+      
+          box-shadow: 0px  0.8px 12px 0.8px rgba(0, 0, 0, 0.3);
+
+}
+
+.carddd{
+    display: flex;
+}
+
+
+.countries{
+    width: 100%;
+    gap: 65px;
+    padding: 0  75px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    /* justify-content: space-around; */
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.countries .card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.289);
+}
+
+.card{
+    display: inline-block;
+    width: 220px;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding-bottom: 25px;
+    transition: all 0.2s ease-in-out;
+    
+   
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.card:hover{
+    /* background-color: aqua; */
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card-text{
+padding-inline: 20px;
+
+}
+
+.card-text .p{
+    margin-block: 3px;
+    align-items: stretch;
+      font-size: 12px;
+      flex: 1;
+}
+.card-title{
+    font-size: 24px;
+     margin-block: 16px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width : 480px){
+   .title { font-size: 15px ;}
+  header p{
+    /* font-size: 15px ; */
+    font-size: 0px ;
+   }
+   p svg{
+    width: 12px;
+   }
+
+}
+
+@media  (max-width : 768px){
+ .countries{
+    justify-content: center;
+ }
+
+}
