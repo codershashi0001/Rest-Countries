@@ -29,19 +29,3 @@ fetch('https://restcountries.com/v3.1/all?fields=name,flags,capital,population,r
 })
 
 
-// const cc = document.createElement('div')
-
-// cc.className = `carddd`
-// carddd.innerHTML = `
-//    <a>
-//     <div class="card">
-//         <img src= "${country.flags.svg}" alt="${country.name.common}">
-//         <div class="card-text">
-//            <p class="card-title"><b>"${country.name.common}"</b></p>
-//     <div class="p">   <p><b>Population: </b>"${country.population}"</p>
-//        <p><b>Region: </b>"${country.region}"</p>
-//        <p><b>Capital: </b>"${country.capital}"</p></div>
-//        </div>
-//     </div>
-//     </a>
-// `
