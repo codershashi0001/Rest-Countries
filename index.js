@@ -1,30 +1,9 @@
-// let img = document.querySelector("img")
-
-// fetch("https://dog.ceo/api/breeds/image/random")
-// .then( (raw) => raw.json())
-// .then ((t) => {
-//     console.log("jai ho data mil gaya");
-//     console.log(t.message)
-// // img.setAttribute("src",t.message)
-// img.src = t.message
-// })
-
-// document.querySelector("button").addEventListener("click",()=>{
-//     location.reload()
-// })
-
 
 fetch('https://restcountries.com/v3.1/all?fields=name,flags,capital,population,region')
 .then(res => res.json())
 .then((data) => {
     const container = document.querySelector(".countries")
     data.forEach((country) => {
-        // console.log(country.capital[0]);
-        // console.log(country.flags.svg);
-        // console.log(country.population);
-        // console.log(country.region);
-        // console.log(country.name.common);
-        // console.log(country);
 
         const cc = document.createElement('div')
         cc.className = `carddd`;
