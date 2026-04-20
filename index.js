@@ -10,7 +10,7 @@ fetch('https://restcountries.com/v3.1/all?fields=name,flags,capital,population,r
      cc.innerHTML = `
     <div class="card">
          <a href="https://www.google.com/search?q=${encodeURIComponent(country.name.common)}" target='blank'>
-  <img src= "${country.flags.svg}" alt="${country.flags.alt}">
+  <img src= "${country.flags.svg}" alt="${country.flags.alt || 'flag'}">
   </a>
   
            <a href="./country.html?name=${country.name.common}&region=${country.region}" target='blank'>
@@ -27,5 +27,7 @@ fetch('https://restcountries.com/v3.1/all?fields=name,flags,capital,population,r
 
     })
 })
-
+.catch((err) => {
+    console.log("Error:", err);
+})
 
