@@ -18,7 +18,7 @@ fetch('https://restcountries.com/v3.1/all?fields=name,flags,capital,population,r
            <p class="card-title"><b>${country.name.common}</b></p>
     <div class="p">   <p><b>Population: </b>${country.population.toLocaleString('en-IN')}</p>
        <p><b>Region: </b>${country.region}</p>
-       <p><b>Capital: </b>${country.capital}</p></div>
+       <p><b>Capital: </b>${country.capital?.[0]}</p></div>
        </div>
     </div>
     </a>
